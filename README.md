@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# HackerNews Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React client that fetches and displays the top stories from HackerNews. The application is built using React and Bootstrap for styling.
 
-## Available Scripts
+![Project Screenshot](./src/assets/images/screenshot.png) _(Screenshot of project)_
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Displays the top 9 stories from [HackerNews API](https://github.com/HackerNews/API).
+- Allows users to comment on the chosen ID of articles.
+- Responsive design using react-bootstrap.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) v18.18.1 and [npm](https://www.npmjs.com/) installed.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone https://github.com/Serg-Kochkin/hackernews-client.git
+cd hackernews-client
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This will open the application in your browser. By default, it can be accessed at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To create a production build of the application, run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+This will generate a `build` directory with the optimized production build.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testing
 
-### Code Splitting
+This project uses [Jest](https://jestjs.io/) along with [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/) for unit testing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Running Tests
 
-### Analyzing the Bundle Size
+To run the tests, you can use the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm test
+```
 
-### Making a Progressive Web App
+This command will initiate Jest and run all test files in the project. The tests are located alongside the components they are testing and have a `.test.js` files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+MIT
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can expand upon this template based on any other specifics of your project, such as testing instructions, information about the API, contributors, and so on.
